@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:local="clr-namespace:LetsCookApp.CustomViews;assembly=LetsCookApp"
+             x:Class="LetsCookApp.Views.SignInSignUpView"  BackgroundImage="back.png" >
+  <StackLayout x:Name="MainStack" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand">
+    <ScrollView  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" >
+
+      <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="35">
+
+        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" RowSpacing="18">
+          <Grid.RowDefinitions>
+
+            <RowDefinition Height="120"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+          </Grid.RowDefinitions>
+          <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="15"/>
+          </Grid.ColumnDefinitions>
+
+          <!--<local:CustomRoundedContentView CornerRadius="25" Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#fefefe">
+                        <local:CustomEntryLightBlue  Text=" EmailID" Keyboard="Email" Placeholder="{Binding EmailLEmailP}" TextColor="#e74c3c" PlaceholderColor="#ffffff" FontSize="14"  />
+                    </local:CustomRoundedContentView>
+                    <Image Grid.Column="0" Grid.Row="0" Source="bigwtmailicon" Aspect="AspectFit" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"/>
+
+                    <local:CustomRoundedContentView CornerRadius="25" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="#e74c3c">
+                        <local:CustomEntryLightBlue  x:Name="txtPassword" Text="Password" Placeholder="{Binding EmailLPasswordP}" IsPassword="True" TextColor="##fefefe" PlaceholderColor="#ffffff" FontSize="14" />
+                    </local:CustomRoundedContentView>
+                    <ContentView Grid.Column="0" Grid.Row="1" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand">
+                        <Image x:Name="whtlock" Source="whtlock" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
+                        <ContentView.GestureRecognizers>
+                            -->
+          <!--<TapGestureRecognizer Tapped="ShowPassword_Tapped" NumberOfTapsRequired="1"/>-->
+          <!--
+                        </ContentView.GestureRecognizers>
+                    </ContentView>
+
+                    <local:CustomLabelRegular Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Text="{Binding EmailLForgot}" TextColor="#ffffff" FontSize="16" HorizontalOptions="EndAndExpand" VerticalOptions="Start">
+                        <local:CustomLabelRegular.GestureRecognizers> 
+                            -->
+          <!--<TapGestureRecognizer Command="{Binding ForgotCommand}"  NumberOfTapsRequired="1"/>-->
+          <!--
+                        </local:CustomLabelRegular.GestureRecognizers>
+                    </local:CustomLabelRegular>-->
+          <StackLayout Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="1" Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="StartAndExpand" Margin="5" >
+            <Image x:Name="whtlock" Source="cooking.png" Aspect="AspectFill" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"/>
+            <Image x:Name="whtlock1" Source="letscook.png" Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center"/>
+          </StackLayout>
+          <Button Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Text="CREATE MY ACCOUNT" TextColor="#e74c3c" FontSize="18" HeightRequest="50" BorderRadius="25" BackgroundColor="#fefefe" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Command="{Binding LoginCommand}"/>
+          <Button Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="2" Text="SIGN IN" TextColor="#fefefe" FontSize="18" HeightRequest="50" BorderRadius="25" BackgroundColor="#e74c3c" HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Command="{Binding LoginCommand}"/>
+          <ContentView Grid.Column="0" Grid.Row="4" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <local:CustomLabelRegular Text="Forgot Password?" TextColor="#ffffff" FontSize="16"   HorizontalOptions="Center" VerticalOptions="Center">
+             </local:CustomLabelRegular>
+           
+          </ContentView>
+        </Grid>
+      </StackLayout>
+
+
+    </ScrollView>
+  </StackLayout>
+</ContentPage>
